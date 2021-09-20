@@ -1,0 +1,17 @@
+{
+  "name": "dynamic-dropdown",
+  "version": "1.0.0",
+  "description": "add dropdown element to DOM dynamically with CSS animations",
+  "main": "addDropDown.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "vanillajs",
+    "javascript",
+    "dropdown",
+    "css"
+  ],
+  "author": "Ishmam Chowdhury",
+  "license": "ISC"
+}
