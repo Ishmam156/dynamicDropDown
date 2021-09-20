@@ -63,7 +63,7 @@ const addDropDownListener = () => {
  *
  * @listens clicksOnTheBody
  *
- * @param {node}   var           HTML node to add the dropDown to.
+ * @param {string}   var         ID of HTML node to add the dropDown to.
  * @param {string}   var         Background color for the dropDown
  * @param {string}   var         Font color for the dropDown
  * @param {Array}   [items]      Array of items to be added to the dropDown as anchor element in container divs
@@ -73,12 +73,12 @@ const addDropDownListener = () => {
  * @return {boolean}              Returns true at end of function.
  */
 
-export default function addDropDown(
+const addDropDown = (
   elementToAddID,
   backgroundColor,
   fontColor,
   contentToAdd
-) {
+) => {
   // Allowing multiple dropDowns with unique color schemes to be used
   const uniqueID = guidGenerator();
 
@@ -110,4 +110,6 @@ export default function addDropDown(
   addDropDownListener();
 
   return true;
-}
+};
+
+module.exports = addDropDown;

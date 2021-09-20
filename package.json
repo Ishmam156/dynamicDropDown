@@ -1,10 +1,14 @@
 {
-  "name": "dynamic-dropdown",
+  "name": "dynamic-dropdown-cssstyled",
   "version": "1.0.0",
   "description": "add dropdown element to DOM dynamically with CSS animations",
   "main": "addDropDown.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ishmam156/dynamicDropDown.git"
   },
   "keywords": [
     "vanillajs",
