@@ -32,6 +32,9 @@ $ npm i dynamic-dropdown-cssstyled
     <div>
         <button id='addDropDown'>DropDown</button>
     </div>
+    <div>
+        <button id='addAnotherDropDown'>Another One</button>
+    </div>
 </nav>    
 ```
 

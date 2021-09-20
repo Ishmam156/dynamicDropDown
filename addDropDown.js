@@ -88,6 +88,7 @@ const addDropDown = (
   const elementParent = elementToAddDropDown.parentElement;
 
   elementToAddDropDown.dataset.dropdownButton = "";
+  elementToAddDropDown.classList.add("link");
   elementParent.dataset.dropdown = "";
   elementParent.classList.add(`dropdown-${uniqueID}`);
 
