@@ -79,10 +79,10 @@ addDropDown("addAnotherDropDown", "pink", "purple", [
 
 <h3>Contributing</h3>
 <p>Contributions are always welcome!</p>
-<p>Kindly do a `pull request` with your contribution.</p>
+<p>Kindly do a <i>pull request</i> with your contribution.</p>
 
 
 
 <h3>Feedback</h3>
-<p>If you have any feedback, please reach out to me in `GitHub`.</p>
+<p>If you have any feedback, please reach out to me in <i>GitHub</i>.</p>
 
