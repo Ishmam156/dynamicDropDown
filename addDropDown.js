@@ -61,16 +61,16 @@ const addDropDownListener = () => {
  * @since      1.0.0
  * @access     public
  *
- * @listens clicksOnTheBody
+ * @listens clicksOnTheBodyElement
  *
- * @param {string}   var         ID of HTML node to add the dropDown to.
- * @param {string}   var         Background color for the dropDown
- * @param {string}   var         Font color for the dropDown
- * @param {Array}   [items]      Array of items to be added to the dropDown as anchor element in container divs
- * @param {string} items.link    The link that will be used within the href for the anchor element
- * @param {string} items.text    The text content that will be used for the anchor element
+ * @param {string}   elementToAddID         ID of HTML node to add the dropDown to.
+ * @param {string}   backgroundColor        Background color for the dropDown
+ * @param {string}   fontColor              Font color for the dropDown
+ * @param {Array}   [contentToAdd]          Array of items to be added to the dropDown as anchor element in container divs
+ * @param {string}  items.link              The link that will be used within the href for the anchor element
+ * @param {string}   items.text             The text content that will be used for the anchor element
  *
- * @return {boolean}              Returns true at end of function.
+ * @return {boolean}                        Returns true at end of function.
  */
 
 const addDropDown = (
