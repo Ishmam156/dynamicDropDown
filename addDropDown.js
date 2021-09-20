@@ -24,10 +24,14 @@ const addDropDownStyle = (backgroundColor, fontColor, uniqueID) => {
 const addDropDownListener = () => {
   // Adding listener to body element and check if the listener attribute is true or not to avoid double adding
   const element = document.querySelector("body");
+
   if (element.getAttribute("listener") == null) {
+    // Add initial attribute on first run
     element.setAttribute("listener", "true");
+
     element.addEventListener("click", (event) => {
       const isDropDownButton = event.target.matches("[data-dropdown-button]");
+      // Check for other clicks than on dropDown
       if (
         !isDropDownButton &&
         event.target.closest("[data-dropdown]") !== null
@@ -35,6 +39,7 @@ const addDropDownListener = () => {
         return;
       }
 
+      // Toggle dropDown active and remove active class from other dropDowns
       let currentDropDown;
       if (isDropDownButton) {
         currentDropDown = event.target.closest("[data-dropdown]");
@@ -82,8 +87,10 @@ const addDropDown = (
   // Allowing multiple dropDowns with unique color schemes to be used
   const uniqueID = guidGenerator();
 
+  // Generating the CSS
   addDropDownStyle(backgroundColor, fontColor, uniqueID);
 
+  // Adding classlist and dataset to target element and it's parent
   const elementToAddDropDown = document.getElementById(elementToAddID);
   const elementParent = elementToAddDropDown.parentElement;
 
@@ -95,6 +102,7 @@ const addDropDown = (
   const dropDownDiv = document.createElement("div");
   dropDownDiv.classList.add(`dropdown-menu-${uniqueID}`);
 
+  // Looping through content provided and adding it to the dropDown container
   contentToAdd.forEach((item) => {
     const container = document.createElement("div");
     const dropDownContent = document.createElement("a");
@@ -108,6 +116,7 @@ const addDropDown = (
 
   elementParent.appendChild(dropDownDiv);
 
+  // Add the listener
   addDropDownListener();
 
   return true;
