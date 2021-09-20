@@ -1,6 +1,6 @@
 {
   "name": "dynamic-dropdown-cssstyled",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "add dropdown element to DOM dynamically with CSS animations",
   "main": "addDropDown.js",
   "scripts": {
