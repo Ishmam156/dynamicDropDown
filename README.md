@@ -43,6 +43,13 @@ $ npm i dynamic-dropdown-cssstyled
 
 import addDropDown from "dynamic-dropdown-cssstyled";
 
+addDropDown(
+  elementToAddID,  // ID of HTML element to add dropDown to
+  backgroundColor, // Color for dropDown background
+  fontColor,       // Color for dropDown text
+  contentToAdd     // Array of objects containing link for href as well as textContent for anchor tag
+)
+
 addDropDown("addDropDown", "#c8c6c6", "#4b6587", [
   {
     link: "http://www.google.com/",
@@ -71,6 +78,7 @@ addDropDown("addAnotherDropDown", "pink", "purple", [
 <h3>Acknowledgements</h3>
 
 - [The Odin Project](https://www.theodinproject.com/)
+- [How To Create Advanced CSS Dropdown Menus - Web Dev Simplified](https://www.youtube.com/watch?v=S-VeYcOCFZw)
 
 <h3>License</h3>
 
