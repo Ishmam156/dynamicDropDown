@@ -43,7 +43,7 @@ $ npm i dynamic-dropdown-cssstyled
 
 import addDropDown from "dynamic-dropdown-cssstyled";
 
-addDropDown("addDropDown", "pink", "purple", [
+addDropDown("addDropDown", "#c8c6c6", "#4b6587", [
   {
     link: "http://www.google.com/",
     text: "Google",
